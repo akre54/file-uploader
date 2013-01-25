@@ -1,4 +1,4 @@
-/*globals window, navigator, document, FormData, File, HTMLInputElement, XMLHttpRequest*/
+/*globals window, define, navigator, document, FormData, File, HTMLInputElement, XMLHttpRequest*/
 var qq = function(element) {
     "use strict";
 
