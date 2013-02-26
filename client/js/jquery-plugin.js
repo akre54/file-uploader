@@ -2,12 +2,12 @@
 (function (factory) {
     if (typeof define === 'function' && define.amd) {
         // AMD. Register as an anonymous module.
-        define(['jquery'], factory);
+        define(['jquery', 'file-uploader'], factory);
     } else {
         // Browser globals
-        factory(jQuery);
+        factory(jQuery, qq);
     }
-}(function($) {
+}(function($, qq) {
     "use strict";
     var uploader, $el, init, dataStore, pluginOption, pluginOptions, addCallbacks, transformVariables, isValidCommand,
         delegateCommand;
