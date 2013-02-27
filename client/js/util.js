@@ -555,11 +555,12 @@ qq.DisposeSupport = function() {
     };
 };
 
-if (typeof exports !== 'undefined') {
-    if (typeof module !== 'undefined' && module.exports) {
-      exports = module.exports = qq;
-    }
-    exports.qq = qq;
+
+
+if (typeof define === 'function' && define.amd) {
+    define('file-uploader', [], function() {
+        return qq;
+    });
 } else {
     root.qq = qq;
 }
